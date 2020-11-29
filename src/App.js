@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.scss'
 import axios from 'axios'
-import Country from './components/Country'
+import Country from './components/Country/Country'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   const [countries, setCountries] = useState([])
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <main className="countries-container">
         { countries.map(country => (
           <div key={country.name}>

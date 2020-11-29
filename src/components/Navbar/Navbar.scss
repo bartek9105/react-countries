@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.1);
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    &__icon {
+        margin-right: .5rem;
+    }
+    &__text {
+        font-weight: 600;
+    }
+}

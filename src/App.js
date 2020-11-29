@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import './App.scss'
 import axios from 'axios'
 import Country from './components/Country'
 
@@ -19,12 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Countries</h1>
-      { countries.map(country => (
-        <div key={country.name}>
-          <Country country={country}/>          
-        </div>
-      )) }
+      <main className="countries-container">
+        { countries.map(country => (
+          <div key={country.name}>
+            <Country country={country}/>          
+          </div>
+        )) }
+      </main>
     </div>
   );
 }

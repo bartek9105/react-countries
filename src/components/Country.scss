@@ -1,0 +1,30 @@
+.country {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    border-radius: 2%;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.1);
+    .country-details-container {
+        padding: 1rem;
+        margin-top: .8rem;
+    }
+    .country-details {
+        margin-bottom: .5rem;
+    }
+    &__flag {
+        height: 150px;
+        border-radius: 2%;
+    }
+    &__name {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+    }
+    &__key {
+        margin-right: 0.5rem;
+        font-weight: 600;
+        font-size: .9rem;
+    }
+}
